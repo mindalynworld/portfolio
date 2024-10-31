@@ -4,7 +4,7 @@
 
 <main>
     <div class="article-cover">
-        <img class="cover-photo" src="../../../assets/SACoverPhoto.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]">
+        <img class="cover-photo" src="../../../static/assets/SACoverPhoto.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]">
         <p class="source-info"><i>Gauteng, South Africa, 2016. (VIIRS DNB)</i></p>
     </div>
 
@@ -40,7 +40,7 @@
         </p>
 
         <div class="article-img-container">
-            <img class="article-img" src="../../../assets/SABarChartEskom.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]">
+            <img class="article-img" src="../../../static/assets/SABarChartEskom.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]">
         </div>
 
         <p>
@@ -78,9 +78,9 @@
 
         <h4>Preview of visualizations:</h4>
         <div class="article-img-container">
-            <img class="article-img" src="../../../assets/radchangeNEW.png" alt="Radiance Change in Gauteng [2016-2023]">
-<img class="article-img" src="../../../assets/radchangetownshipsNEW.png" alt="Radiance Change in Gauteng with former township boundaries overlaid [2016-2023]">
-<img class="article-img" src="../../../assets/explorationmaps.svg" alt="Income index, Population, solar panel presence, % of white residents (2020)">
+            <img class="article-img" src="../../../static/assets/radchangeNEW.png" alt="Radiance Change in Gauteng [2016-2023]">
+<img class="article-img" src="../../../static/assets/radchangetownshipsNEW.png" alt="Radiance Change in Gauteng with former township boundaries overlaid [2016-2023]">
+<img class="article-img" src="../../../static/assets/explorationmaps.svg" alt="Income index, Population, solar panel presence, % of white residents (2020)">
         </div>
         <p>These maps plot various variables including Neighborhood Lifestyle Index (an income-level index, 10 - very high-income, 1 - very low-income), population density, percentage of white residents, and presence of solar panels within hexagonal spatial units with an area of 0.103755 km2. A quick glance at these maps reveals the highly racially and economically segregated nature of Gauteng. The former township boundaries from apartheid very much still exist and correspond heavily with race, income, population density. <b>Overall, we can see that these lower-income, high population density, majority non-white areas – especially those located within former townships – are experiencing the highest degrees of radiance decline from energy disruptions. </b></p>
     
