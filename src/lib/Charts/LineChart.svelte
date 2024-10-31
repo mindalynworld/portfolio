@@ -45,7 +45,7 @@
             avg_rad: number;
         };
 
-        d3.csv("../../../data/YEARLY_AVG_RAD_MINMAX_LONG.csv", (d) => {
+        d3.csv("/data/YEARLY_AVG_RAD_MINMAX_LONG.csv", (d) => {
             let output: Radiance = {
                 year: parseTime(d.year)!, // convert to Date object. thinks it could be null, so options are 1) ! non-null assertion 2) date ?? new Date() 3) checking for null before assigning
                 city: d.city,
