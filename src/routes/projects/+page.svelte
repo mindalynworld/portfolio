@@ -1,13 +1,15 @@
 <script lang="ts">
     import * as d3 from 'd3';
     import { afterUpdate } from 'svelte';
+    import { base } from '$app/paths';
+
     const data = [
-        {title: "project 1", desc_short: "short description", route: "/projects/south-africa-energy"},
-        {title: "project 2", desc_short: "short description", route: "/projects/south-africa-energy"},
-        {title: "project 3", desc_short: "short description", route: "/projects/south-africa-energy"},
-        {title: "project 4", desc_short: "short description", route: "/projects/south-africa-energy"},
-        {title: "project 5", desc_short: "short description", route: "/projects/south-africa-energy"},
-        {title: "project 6", desc_short: "short description", route: "/projects/south-africa-energy"}];
+        {title: "project 1", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
+        {title: "project 2", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
+        {title: "project 3", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
+        {title: "project 4", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
+        {title: "project 5", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
+        {title: "project 6", desc_short: "short description", route: `${base}/projects/south-africa-energy`}];
 
     let wrapper: HTMLElement;
     // let width = "80%";
