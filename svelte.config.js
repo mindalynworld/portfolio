@@ -17,7 +17,8 @@ const config = {
 			fallback: '404.html'
 		}),
 		paths: {
-            base: process.argv.includes('dev') ? '' : process.env.BASE_PATH ///portfolio
+            //base: process.argv.includes('dev') ? '' : process.env.BASE_PATH ///portfolio
+			base: process.env.NODE_ENV === 'production' ? '/portfolio' : '', // process.env.BASE_PATH ///portfolio
         }
 	}
 };
