@@ -110,12 +110,14 @@
 <style>
     #legend {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 1rem;
+        flex-wrap: wrap;
     }
 
     div :global(.itemGrp) {
         display: flex;
+        margin-bottom: 0.5rem;
     }
 
     :global(#vis) {
