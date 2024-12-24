@@ -2,6 +2,7 @@
     import { onMount, tick } from 'svelte';
     import * as d3 from 'd3';
     import CategoricalLegend from './Embellishments/CategoricalLegend.svelte';
+    import { base } from '$app/paths';
 
     //export const excludedValues: string[] = [];
     const { excludedValues = [] } = $props();
@@ -10,7 +11,7 @@
 
     let vis: HTMLElement;
     let categories: string[] = $state(["x","y","z"]);
-    $effect(() => console.log("categories update:" + categories))
+    //$effect(() => console.log("categories update:" + categories))
     const colorPalette = ['#960033', '#D24261', '#ACD7FF','#3175DB', '#0046A3', '#002A80'];
     let colorPaletteFiltered: string[] = [];
 
@@ -45,7 +46,7 @@
             avg_rad: number;
         };
 
-        d3.csv("/data/YEARLY_AVG_RAD_MINMAX_LONG.csv", (d) => {
+        d3.csv(`${base}/data/YEARLY_AVG_RAD_MINMAX_LONG.csv`, (d) => {
             let output: Radiance = {
                 year: parseTime(d.year)!, // convert to Date object. thinks it could be null, so options are 1) ! non-null assertion 2) date ?? new Date() 3) checking for null before assigning
                 city: d.city,
@@ -53,11 +54,11 @@
             };
             return output
         }).then(function(data) {
-            console.log(data);
+            //console.log(data);
 
             let yearsArray: Date[] = []; // (Date | null)
             data.forEach(d => yearsArray.push(d.year));
-            console.log(d3.min(yearsArray)); // for some reason i can't use this in the domain below because it could return Date or undefined.
+            // console.log(d3.min(yearsArray)); // for some reason i can't use this in the domain below because it could return Date or undefined.
             // it's because .min, .max, and .extent can return the type OR undefined, and domain only accepts certain values. so have to handle if undefined
 
             const start = d3.min(yearsArray) ?? new Date(2012, 1);
