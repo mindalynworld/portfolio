@@ -54,7 +54,7 @@
             };
             return output
         }).then(function(data) {
-            //console.log(data);
+            console.log(data);
 
             let yearsArray: Date[] = []; // (Date | null)
             data.forEach(d => yearsArray.push(d.year));
@@ -141,6 +141,8 @@
                 .x(d => xScale(d[0]))
                 .y(d => yScale(d[1]));
 
+
+
             const path = svg.append("g")
                 .attr("fill", "none")
                 // .attr("stroke", "steelblue")
@@ -148,7 +150,8 @@
                 .attr("stroke-linejoin", "round")
                 .attr("stroke-linecap", "round")
                 .selectAll("path")
-                .data(groups.values().filter(d => !(excludedValues as string[]).includes(d[0][2])))
+                // can't call .filter() on non array objects in ES6, so converting map iterator to array
+                .data([...groups.values()].filter(d => !(excludedValues as string[]).includes(d[0][2])))
                 .join("path")
                 .style("mix-blend-mode", "multiply")
                 .attr("d", lineGenerator)
