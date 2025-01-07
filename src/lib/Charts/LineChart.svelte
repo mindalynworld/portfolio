@@ -221,7 +221,7 @@
     <CategoricalLegend keys={categories} palette={colorPaletteFiltered}></CategoricalLegend>
     {/key}
     <div id="vis" bind:this={vis}></div>
-    <p class="caption"> Graphic: Mindy Ng. This visualization was created using d3.js. Read more about the data processing below.</p>
+    <p class="caption"> Graphic: Mindy Ng. This interactive line chart was created using d3.js. Read more about the data below.</p>
 </div>
 
 <style>
