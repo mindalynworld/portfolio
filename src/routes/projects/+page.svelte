@@ -4,12 +4,10 @@
     import { base } from '$app/paths';
 
     const data = [
-        {title: "project 1", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
-        {title: "project 2", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
-        {title: "project 3", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
-        {title: "project 4", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
-        {title: "project 5", desc_short: "short description", route: `${base}/projects/south-africa-energy`},
-        {title: "project 6", desc_short: "short description", route: `${base}/projects/south-africa-energy`}];
+        {title: "The Dark Divide", desc_short: "Using nighttime lights to study disparities in energy access amidst the energy crisis in South Africa", route: `${base}/projects/south-africa-energy`},
+        {title: "Male-Female Journeys to Work", desc_short: "Visualizing gender disparities in communiting patterns in Gauteng, South Africa.", route: 'https://www.google.com/url?q=https://gcro.ac.za/outputs/map-of-the-month/detail/extended-urbanisation-gcr-gender-commuting-migration-and-belonging/&sa=D&source=docs&ust=1736217623597369&usg=AOvVaw06qRtDrxY29HGspS0jlAUR'},
+        {title: "Mental Health and Police Violence", desc_short: "Exploring the role of mental health in police violence in the US.", route: `${base}/projects/police-shootings`},
+        {title: "Project Qute", desc_short: "Quantum science k-12 curriculum developed as part of U.S. National Quantum Initiative by the White House.", route: 'https://iqim.caltech.edu/quantime/'}];
 
     let wrapper: HTMLElement;
     // let width = "80%";
