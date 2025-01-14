@@ -9,7 +9,7 @@
 
     <div class="article-body"> 
         <h1>The Role of Mental Illness in Fatal Police Shootings</h1>
-        <h2>Should you call the police to de-escalate your mental health emergency? The data says no. Especially if you're of Asian descent.</h2>
+        <h2>Should you call the police to de-escalate your mental health emergency? The data says no.</h2>
         <h4>By: Mindy Ng</h4>
         <h5><i>January 2, 2025</i></h5>
 
@@ -33,7 +33,7 @@
         </div>
 
         <h3>Zooming in on California</h3>
-        
+
         <div class="viz-wrapper">
             <div style="min-height:437px" id="datawrapper-vis-T0wgh">
                 <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/T0wgh/embed.js" charset="utf-8" data-target="#datawrapper-vis-T0wgh"></script><noscript><img src="https://datawrapper.dwcdn.net/T0wgh/full.png" alt="" /></noscript>
