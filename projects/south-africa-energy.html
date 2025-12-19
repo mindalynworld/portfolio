@@ -6,20 +6,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link href="../app/immutable/assets/5.BRe01DO4.css" rel="stylesheet">
-		<link rel="modulepreload" href="../app/immutable/entry/start._g8101mH.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/entry.vixGJjCM.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/runtime.DoZM07Gd.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/paths.DllY594u.js">
-		<link rel="modulepreload" href="../app/immutable/entry/app.BBshv0T3.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/render.Bg6eSBXm.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/disclose-version.Blli6E5o.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/props.CD8wr2Vr.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/store.BxAygKsJ.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/index-client.cQjgrv4v.js">
-		<link rel="modulepreload" href="../app/immutable/nodes/0.ExZzz4dr.js">
-		<link rel="modulepreload" href="../app/immutable/nodes/5.Bo1O0Hpl.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/attributes.CVoaOWor.js">
-		<link rel="modulepreload" href="../app/immutable/chunks/transform.CzLan8xH.js">
+		<link rel="modulepreload" href="../app/immutable/entry/start.DFiWKkIr.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/entry.Blh8QH9O.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/runtime.DDvq2xj7.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/paths.BJMMFs9-.js">
+		<link rel="modulepreload" href="../app/immutable/entry/app.B30p8MK9.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/preload-helper.C1FmrZbK.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/render.C0E2NljC.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/disclose-version.DLAPnD8a.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/props.WBnwcpBY.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/store.RXd4Lias.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/this.BknO5kmY.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/index-client.roizNe2p.js">
+		<link rel="modulepreload" href="../app/immutable/nodes/0.CsNewnlG.js">
+		<link rel="modulepreload" href="../app/immutable/nodes/5.D7dLbmXH.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/attributes.594Jl3nh.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/transform.aGOf7qKH.js">
+		<link rel="modulepreload" href="../app/immutable/chunks/time.IlbDDNFl.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><!----><main class="svelte-gr7g42"><div class="article-cover svelte-gr7g42"><img class="cover-photo" src="../assets/SACoverPhoto.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]"> <p class="source-info svelte-gr7g42"><i>Gauteng, South Africa, 2016. (VIIRS DNB)</i></p></div> <div class="article-body svelte-gr7g42"><h1>The Dark Divide</h1> <h2>Using nighttime lights to study disparities in energy access amidst the energy crisis in South Africa</h2> <h4>By: Mindy Ng</h4> <h5><i>October 1, 2024</i></h5> <section class="svelte-gr7g42"><p class="svelte-gr7g42">One of my favorite things about flying at night is looking down on a city from the window and seeing the shape, motion, and pulse of a city illuminated solely by streetlamps, car headlights, and households burning the midnight oil.</p> <p class="svelte-gr7g42">There are some pretty incredible insights you can learn about cities just by viewing them from above when it's dark. As the availability and quality of satellite imagery has grown over the past few decades, researchers have been able to use aerial nighttime images to study urban development and economic growth in urban contexts. In general, it has been observed that nighttime lights in major metropolitan cities grow brighter as they experience economic development over time, attributed to the expansion of new infrastructure and overall increased electrification.</p> <p class="svelte-gr7g42">The chart below uses satellite-based nighttime lights data (VIIRS day/night band from the National Oceanic and Atmospheric Administration (NOAA)) to show the radiance of four major metropolitan cities in West and East Africa that have grown economically in the last decade: Nairobi, Lagos, Addis Ababa, and Dar Es Salaam.</p></section> <section class="svelte-gr7g42"><div class="canvas svelte-10b9gx4"><h1>Relative Change in Radiance of Major Metropolitan Cities in Africa 2012-2023</h1>  <!----><div id="legend" class="svelte-1qbenv2"></div><!----> <div id="vis"></div> <p class="caption svelte-10b9gx4">Graphic: Mindy Ng. This interactive line chart was created using d3.js. Read more about the data below.</p></div><!----></section> <section class="svelte-gr7g42"><h3>But what can nighttime lights show us about cities experiencing electricity disruptions?</h3> <p class="svelte-gr7g42">Since 2007, South Africa has been experiencing an increasingly worsening energy crisis, largely caused by the national energy supplier, Eskom. Citing failing infrastructure, corruption, and poor management, the country currently experiences rolling blackouts (aka “load shedding”) on a near-daily basis.</p> <div class="article-img-container svelte-gr7g42"><img class="article-img svelte-gr7g42" src="../assets/SABarChartEskom.png" alt="[Bar chart of hours shed by Eskom by year 2014-2023]"></div> <p class="svelte-gr7g42">The first load shedding instances occurred sparsely in 2007/2008 and 2014/2015, but since 2018, the frequency and length of these blackouts have increasingly worsened at an unprecedented rate (Nico, 2023). The bar chart above shows the amount of Gigawatt hours that have been shed each year, revealing that by May, the year 2023 had already seen almost as much load shedding as in all of 2022.</p></section> <section class="svelte-gr7g42"><p class="svelte-gr7g42">Below, we add the radiance lines for Johannesburg and Cape Town, South Africa's two largest cities. We see that all of the other cities with comparable population growth, GDP, and size, radiance are increasing consistently. Johannesburg and Cape Town follow the same upward trajectory until 2018 (the year then load shedding was implemented at an unprecedented rate), where we start to see a downward trend. The radiance continues to decline each year, corresponding to increasing amounts of loadshedding.</p> <div class="canvas svelte-10b9gx4"><h1>Relative Change in Radiance of Major Metropolitan Cities in Africa 2012-2023</h1>  <!----><div id="legend" class="svelte-1qbenv2"></div><!----> <div id="vis"></div> <p class="caption svelte-10b9gx4">Graphic: Mindy Ng. This interactive line chart was created using d3.js. Read more about the data below.</p></div><!----> <p class="svelte-gr7g42">These energy disruptions have led to significant obstacles for South Africa, including a stagnation of GDP growth: These energy disruptions have led to significant obstacles for South Africa, including a stagnation of GDP growth: In 2023, <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ZA" target="_blank" rel="noopener noreferrer">South Africa’s GDP grew 0.6% compared to 4.7% in 2021</a>.
@@ -27,7 +30,7 @@
 			
 			<script>
 				{
-					__sveltekit_1lsc6za = {
+					__sveltekit_1wwblnh = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/portfolio"
 					};
@@ -37,8 +40,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../app/immutable/entry/start._g8101mH.js"),
-						import("../app/immutable/entry/app.BBshv0T3.js")
+						import("../app/immutable/entry/start.DFiWKkIr.js"),
+						import("../app/immutable/entry/app.B30p8MK9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],
