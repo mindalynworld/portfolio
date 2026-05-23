@@ -8,7 +8,8 @@
         {title: "Male-Female Journeys to Work", desc_short: "Visualizing gender disparities in communiting patterns in Gauteng, South Africa.", route: 'https://www.google.com/url?q=https://gcro.ac.za/outputs/map-of-the-month/detail/extended-urbanisation-gcr-gender-commuting-migration-and-belonging/&sa=D&source=docs&ust=1736217623597369&usg=AOvVaw06qRtDrxY29HGspS0jlAUR'},
         {title: "Mental Health and Police Violence", desc_short: "Exploring the role of mental health in police violence in the US.", route: `${base}/projects/police-shootings`},
         {title: "Project Qute", desc_short: "Quantum science k-12 curriculum developed as part of U.S. National Quantum Initiative by the White House.", route: 'https://iqim.caltech.edu/quantime/'},
-        {title: "Temperatures", desc_short: "Heatmap timelapse of average daily temperature changes in San Francisco from 1980-2019", route: `${base}/projects/temperatures`}];
+        {title: "Temperatures", desc_short: "Heatmap timelapse of average daily temperature changes in San Francisco from 1980-2019", route: `${base}/projects/temperatures`},
+        {title: "Personal Data Wrapped 2025", desc_short: "Visualizing data collected about personal daily routines, emotions, sleep, exercise, and more.", route: `${base}/projects/personal-data`}]
 
     let wrapper: HTMLElement;
     // let width = "80%";
