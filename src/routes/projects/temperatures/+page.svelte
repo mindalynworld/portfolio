@@ -88,7 +88,7 @@
         <h2> Proposal </h2>
 
         <p>
-            This project was made for a proposal to be displayed on the 360° screen on top of the Salesforce tower, the city's tallest skyscraper, located in the SoMa district in San Francisco. 
+            This project was made for a proposal to be displayed on the 360° screen on top of the Salesforce tower, San Francisco's tallest skyscraper. 
             The tower sits directly beside one of the most heavily trafficked commuter highways in a city deeply marked by tech-industry-led developement. 
 
             The visual consists of a timelapse of calendar heat maps from 1980 - 2019. Each cell and its color represents a day of the year and its average temperature.
