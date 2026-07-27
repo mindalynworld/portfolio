@@ -6,7 +6,7 @@
     import { onMount, onDestroy } from 'svelte';
     import { base } from '$app/paths';
     import * as d3 from 'd3';
-    import { PUBLIC_MAPBOX_API_KEY } from '$env/static/public';
+    // import { PUBLIC_MAPBOX_API_KEY } from '$env/static/public';
 
     let map: mapboxgl.Map;
     let mapContainer: HTMLDivElement;
@@ -54,7 +54,7 @@
           container: mapContainer,
           projection: 'albers',
           style: 'mapbox://styles/mapbox/dark-v11',
-          accessToken: PUBLIC_MAPBOX_API_KEY,
+          accessToken: "test",//PUBLIC_MAPBOX_API_KEY,
           center: [initialState.lng, initialState.lat],
           zoom: initialState.zoom,
           minZoom: initialState.zoom,
