@@ -69,6 +69,34 @@
         var color = d3.scaleOrdinal<string>()
             .domain(categories) //colorDict.keys() // categories
             .range(colorPaletteFiltered); // colorDict.values() // colorPalette
+
+        import Papa from "papaparse";
+        Papa.parse<Case>(file, {
+          header: true, // Uses the first row as object keys (ID, Name, etc.)
+          skipEmptyLines: true, // Ignores blank lines
+          complete: (results) => {
+            if (results.errors.length > 0) {
+              errorMessage = 'Error parsing CSV file.';
+              console.error(results.errors);
+            } else {
+              errorMessage = '';
+              cases = results.data.map(row => {
+                console.log(row);
+                return {
+                  name: row.name,
+                  age: row.age,
+                  date: row.date,
+                  latitude: row.latitude,
+                  longitude: row.longitude
+                }
+              }); // Assign typed data to state
+            }
+            console.log(cases);
+          },
+          error: (error: { message: any; }) => {
+            errorMessage = `File read error: ${error.message}`;
+          }
+        });
 </script>
 
 <body>

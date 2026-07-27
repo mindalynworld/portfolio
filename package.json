@@ -16,6 +16,7 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/cal-heatmap": "^3.5.39",
+		"@types/papaparse": "^5.5.2",
 		"gh-pages": "^6.2.0",
 		"rollup-plugin-node-resolve": "^5.2.0",
 		"svelte": "^5.1.6",
@@ -27,6 +28,8 @@
 	"dependencies": {
 		"@types/d3": "^7.4.3",
 		"cal-heatmap": "^4.2.4",
-		"d3": "^7.9.0"
+		"d3": "^7.9.0",
+		"mapbox-gl": "^3.26.0",
+		"papaparse": "^5.5.4"
 	}
 }

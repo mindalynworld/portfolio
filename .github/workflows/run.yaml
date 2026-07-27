@@ -1,0 +1,15 @@
+name: Run Application Code
+on: [push]
+
+jobs:
+  run-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Run main script
+        # Map the GitHub secret to a local environment variable here
+        env:
+          APP_SECRET: ${{ secrets.MAPBOX_API_KEY }} 
+        run: python main.py
