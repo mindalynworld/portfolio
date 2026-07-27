@@ -1,0 +1,23 @@
+name: Build and Deploy to GitHub Pages
+on: [push]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: install dependencies
+        run: npm install
+
+      - name: build app
+        run: npm run build
+        env:
+          APP_SECRET: ${{ secrets.MAPBOX_API_KEY }} 
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to
+          folder: build # The folder containing your compiled build files 
