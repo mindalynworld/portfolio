@@ -4,6 +4,8 @@ on: [push]
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grants permission to push code to the repository
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
