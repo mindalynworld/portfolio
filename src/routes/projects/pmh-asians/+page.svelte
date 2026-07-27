@@ -54,7 +54,7 @@
           container: mapContainer,
           projection: 'albers',
           style: 'mapbox://styles/mapbox/dark-v11',
-          accessToken: "test",//PUBLIC_MAPBOX_API_KEY,
+          accessToken: "test",//PUBLIC_MAPBOX_API_KEY, 
           center: [initialState.lng, initialState.lat],
           zoom: initialState.zoom,
           minZoom: initialState.zoom,
