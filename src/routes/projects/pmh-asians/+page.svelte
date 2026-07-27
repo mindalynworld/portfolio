@@ -7,7 +7,7 @@
     import { base } from '$app/paths';
     import * as d3 from 'd3';
 
-    const mapboxApiKey = process.env.APP_SECRET;
+    const mapboxApiKey = import.meta.env.VITE_APP_SECRET;
 
     let map: mapboxgl.Map;
     let mapContainer: HTMLDivElement;
