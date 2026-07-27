@@ -1,4 +1,4 @@
-import{a as d,t as u}from"../chunks/disclose-version.TKfxDqPx.js";import{p as v,n as o}from"../chunks/runtime.BTffk5uJ.js";import{i as s}from"../chunks/lifecycle.id-CM_4S.js";import{o as i}from"../chunks/index-client.Dj6Jg8Ml.js";import{C as r,T as p,L as c}from"../chunks/Legend.esm.DBzRBTcx.js";import"../chunks/transform.aGOf7qKH.js";import"../chunks/paths.B2YGEFZ5.js";const m=[`[
+import{a as d,t as u}from"../chunks/disclose-version.Brr_4vZ-.js";import{p as v,n as o}from"../chunks/runtime.DJ_572Dz.js";import{i as s}from"../chunks/lifecycle.BNUNXyqU.js";import{o as i}from"../chunks/index-client.DN82ELn9.js";import{C as r,T as p,L as c}from"../chunks/Legend.esm.CMGFcYgq.js";import"../chunks/transform.3JRDR0Jo.js";import"../chunks/paths.rU9B_7FS.js";const m=[`[
   {
     "date": "2025-01-01",
     "value": 0.5
