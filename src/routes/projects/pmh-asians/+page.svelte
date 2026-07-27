@@ -51,6 +51,7 @@
     });
 
     function loadMap() {
+        console.log("API KEY:" mapboxApiKey);
         map = new Map({
           container: mapContainer,
           projection: 'albers',
